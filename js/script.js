@@ -59,9 +59,25 @@ projects.map((item, index)=>{
 
     let cardProject = document.querySelector('.models .card').cloneNode(true)
 
-
     document.querySelector('.projects .projects-area #automation').append(cardProject)
 
     cardProject.querySelector('.card img').src = item.image
     cardProject.querySelector('.card h3').innerHTML = item.name
+
+
 });
+
+
+
+let btn_hambuguer = document.querySelector('.menu-hamburgue i')
+
+btn_hambuguer.addEventListener('click', ()=>{
+    alert('Olá')
+})
+
+
+let close_modal = document.querySelector('.close-modal i')
+
+close_modal.addEventListener('click', ()=>{
+    document.querySelector('.modal').style.display = 'none'
+})
